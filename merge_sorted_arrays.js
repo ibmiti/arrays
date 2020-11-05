@@ -1,4 +1,16 @@
 // merge previously sorted arrays
+// arrays are great for sorting due to their indexes
+
+
+// benefits of arrays 
+// :fast lookups
+// :fast push/pop
+// :ordered 
+
+// cons of arrays
+// :Slow inserts
+// :Slow deletes
+// :Fixed size* - if using static array
 
 function mergeSortedArrays(arr1, arr2) 
 {
@@ -43,3 +55,6 @@ function mergeSortedArrays(arr1, arr2)
 // these separate arrs will be merged 
 mergeSortedArrays([0,3,4,31],[4,6,30]);
                     // arr1    arr2
+
+
+
