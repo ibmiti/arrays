@@ -43,3 +43,26 @@ function mutation(arr) {
       }
       
       chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+//Given 2 list, compare each list's index
+//if list a's index > b's index, then give a point 
+//to the variable representing the first list,
+//...
+let alice=a,bob=b;
+let alicePoints=0,bobPoints=0;
+let results=[];
+for(let i=0;i<b.length;i++){
+    if(a[i]==bob[i]){
+        continue;
+    }
+    if(alice[i]>bob[i]){
+        alicePoints++;
+    }
+    if(bob[i]>alice[i]){
+        bobPoints++;
+    }
+} 
+results.push(alicePoints);
+results.push(bobPoints);
+return results;
+}
