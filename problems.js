@@ -199,9 +199,17 @@ function titleCase(str) {
   
   bouncer([7, "ate", "", false, 9]);
 
-  //Stop and return the position, where given num is greater than current i in arr
-  function getIndexToIns(arr, num) {
-    return arr.filter(val=>num>val).length;
+//Return the lowest index at which a value (second argument) 
+//should be inserted into an array (first argument) once it has been sorted. 
+//The returned value should be a number.
+function getIndexToIns(arr, num) {
+    let givenNum=num;
+    //Filter method will remove every element from the arr,
+    //that do not meet the condition imposed...
+    return arr.filter(numAtIndex=>givenNum>numAtIndex).length;
+    //We then only return the length of the arr, which will
+    //tell us the lowest index at which a value should be inserted into an
+    //array
   }
   
-  getIndexToIns([40, 60], 50);
+  getIndexToIns([10, 20, 30, 40, 50], 30);
